@@ -11,6 +11,7 @@
 // StrictMode: envuelve la app para mostrar advertencias en desarrollo.
 // No afecta en producción. Ayuda a detectar errores comunes.
 import { StrictMode } from "react";
+import "./index.css";
 
 // createRoot: la función moderna de React para montar la app.
 import { createRoot } from "react-dom/client";

@@ -15,7 +15,7 @@ function LoginPage() {
         setError("");
         try {
             const res = await login(username, password);
-            setToken(res.data.token);
+            setToken(res.data.accessToken);
             navigate("/dashboard");
         } catch {
             setError("Credenciales incorrectas. Intenta de nuevo.");

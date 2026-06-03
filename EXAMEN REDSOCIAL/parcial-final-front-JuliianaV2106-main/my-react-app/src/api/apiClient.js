@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL: "http://x104m04:8080/post-manager",
+    baseURL: "http://localhost:8080/post-manager",
 });
 
 apiClient.interceptors.request.use((config) => {

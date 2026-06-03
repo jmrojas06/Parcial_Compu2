@@ -21,7 +21,9 @@ const apiClient = axios.create({
     // CAMBIAR SEGÚN EL EXAMEN:
     //   PEDIDOS/VUELOS → "http://localhost:8080/api/v1"
     //   REDSOCIAL      → "http://x104m04:8080/post-manager"
-    baseURL: "http://localhost:8080/api/v1",
+    // La URL viene del archivo .env (VITE_API_URL=...)
+    // En el examen: solo cambiar el .env, no tocar este archivo
+    baseURL: import.meta.env.VITE_API_URL,
 });
 
 // interceptors.request.use() = "antes de CADA petición, haz esto".
